@@ -1,17 +1,22 @@
 #home {
-  background-color: #D23333;
-  color: white;
-  height: 100vh;
+  background-color: #FFFFFF;
+  color: #363636;
   display: flex;
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  p {
-    margin-top: 1.5em;
-  }
+  padding: 100px 0;
   a {
     color: rgba(0,0,0,0.4);
     font-weight: bold;
     font-size: 16px;
+  }
+  h2 {
+    font-family: "Varela", "Helvetica", "sans-serif";
+  }
+}
+@media (max-width: 1250px) {
+  .home-content {
+    width: 100%;
   }
 }
