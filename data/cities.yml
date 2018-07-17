@@ -1,22 +1,27 @@
 # cities.yml
-- name: Berlin
-  address: Berlin, Germany
-  description: Charming room in Berlin
-  user: Torsten
-  user_photo: https://kitt.lewagon.com/placeholder/users/jonathan
-  url: 'https://kitt.lewagon.com/placeholder/cities/berlin'
+- name: London
+  address: London, UK
+  description: Charming room in London
+  user: monsieurpaillard
+  name_user: Romain
+  user_photo: https://kitt.lewagon.com/placeholder/users/monsieurpaillard
+  url: 'https://kitt.lewagon.com/placeholder/cities/london'
   rating: 5
+
 - name: Paris
   address: Paris, France
   description: "Nice flat in Paris"
-  user: Jean-Marc
-  user_photo: https://kitt.lewagon.com/placeholder/users/brian
+  user: ssaunier
+  name_user: Sebastien
+  user_photo: https://kitt.lewagon.com/placeholder/users/ssaunier
   url: 'https://kitt.lewagon.com/placeholder/cities/paris'
   rating: 3
+
 - name: Tokyo
   address: Tokyo, Japan
   description: 'Small flat in Tokyo'
-  user: Takayuki
-  user_photo: https://kitt.lewagon.com/placeholder/users/mrick
+  user: papillard
+  name_user: Boris
+  user_photo: https://kitt.lewagon.com/placeholder/users/papillard
   url: 'https://kitt.lewagon.com/placeholder/cities/tokyo'
   rating: 4

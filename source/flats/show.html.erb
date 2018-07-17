@@ -1,0 +1,117 @@
+<!-- source/flats/show.html.erb -->
+
+<!-- Access data.flats with owner's name as key -->
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+
+<div class="banner banner-small" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 50%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
+</div>
+<div class="wrap">
+  <div class="container" id="flat-summary">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+        <div class="flat-decription">
+          <div class="flat-user">
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "avatar" %>
+            <p><%= owner %></p>
+          </div>
+          <div class="flat-index">
+            <h2><%= flat.description %></h2>
+            <p><%= flat.city_name %></p>
+            <p><% flat.rating.times do %>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+              <% end %>
+              <% (5 - flat.rating).times do %>
+                <i class="fa fa-star" style="color: #cacccd"></i>
+              <% end %></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <div class="flat-form">
+          <h2>Book this flat</h2>
+          <form>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-xs-6">
+                  <input class="form-control" type="text" placeholder="Checking">
+                </div>
+                <div class="col-xs-6">
+                  <input class="form-control" type="text" placeholder="Checkout">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+
+                <div class="col-xs-12">
+                  <select class="form-control" type="text">
+                    <option value="1">1 guest</option>
+                    <option value="2">2 guests</option>
+                    <option value="3">3 guests</option>
+                  </select>
+                </div>
+
+              </div>
+            </div>
+            <input type="Submit" class="btn btn-danger btn-block" value="Book">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap-grey">
+  <div class="container padded">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 column">
+        <h4>About this flat</h4>
+        <p>This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 column">
+        <div class="flat-characteristics">
+          <div class="ch-part">
+            <span>The Space</span>
+          </div>
+          <div class="ch-part">
+            <p>Accommodates: <strong>2</strong></p>
+            <p>Bathroom: <strong>1</strong></p>
+            <p>Bed type: <strong>Real Bed</strong></p>
+            <p>Bedroom: <strong>1</strong></p>
+          </div>
+          <div class="ch-part">
+            <p>Beds: <strong>1</strong></p>
+            <p>Property Type: <strong>Apartment</strong></p>
+            <p>Room type: <strong>Entire home/apt</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <div class="flat-characteristics">
+          <div class="ch-part">
+            <span>Amenities</span>
+          </div>
+          <div class="ch-part">
+            <p><i class="fa fa-cutlery"></i>Kitchen</p>
+            <p><i class="fa fa-wifi"></i>Wifi</p>
+          </div>
+          <div class="ch-part">
+            <p><i class="fa fa-desktop"></i>TV</p>
+            <p><i class="fa fa-glass"></i>Welcome drink</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
